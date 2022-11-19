@@ -22,3 +22,9 @@ snap install postman
 ## azure data studio
 https://database.guide/how-to-install-azure-data-studio-on-ubuntu-20-04/
 
+## dbeaver (opensource db client)
+```
+sudo snap install dbeaver-ce
+```
+
+
