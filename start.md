@@ -3,7 +3,7 @@ Basic configuraton: secrets handling + mysql database on backend side
 
 ## Create git repository
 ## Clone git repository
-## Navigate to the root folder of reppsitory and install django
+## Navigate to the root folder of repsitory and install django
 ```
 sudo apt install python3-django
 ```
