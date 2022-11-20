@@ -1,24 +1,27 @@
-1. Create git repository
-2. Clone git repository
-3. Navigate to the root folder of reppsitory and install django
+# Starting project in django and basic configuration
+Basic configuraton: secrets handling + mysql database on backend side
+
+## Create git repository
+## Clone git repository
+## Navigate to the root folder of reppsitory and install django
 ```
 sudo apt install python3-django
 ```
-4. Create django project
+## Create django project
 ```
 django-admin startproject <project-name> .
 ```
-5. Create django application
+## Create django application
 ```
-python3 manage.py startapp black_jack_be
+python3 manage.py startapp <application_name>
 ```
-6. Create environement and activate it
+## Create environement and activate it
 ```
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-7. Create .gitignore using python template and ensure .env is listed there
-8. Create .env file and move secrets from setting.py there
+## Create .gitignore using python template and ensure .env is listed there
+## Create .env file and move secrets from setting.py there
  - install dot-env and add it to the requirements.txt file
     ```bash
     pip install python-dotenv
@@ -33,11 +36,11 @@ source .venv/bin/activate
     ```python
     SECRET_KEY = os.getenv('SECRET_KEY')
     ```
-9. Install django and add it to the requirements.txt
+## Install django and add it to the requirements.txt
 ```bash
 pip install django
 ```
-10. Install mysql
+## Install mysql
     - create database for project purposes
     - create dedictaed user with DML / DDL permissions
     - update .env file with follwoing:
@@ -63,4 +66,17 @@ pip install django
         }
     }
     ```
+## Make database migrations
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+```
+## Validate id the server is running fine, start the server:
+```bash
+python3 manage.py runserver
+```
+and navigate to: http://127.0.0.1:8000/
+
+## Commit changes to repo
 
