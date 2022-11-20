@@ -20,6 +20,9 @@ django-admin startproject <project-name> .
 cd <project-name>
 python3 manage.py startapp <application_name>
 ```
+### Register new app in settings.py file
+Add new line with <application_name> to INSTALLED_APPS container.
+
 ### Create .gitignore using python template and ensure .env is listed there
 ### Create .env file and move secrets from setting.py there
  - install dot-env and add it to the requirements.txt file
