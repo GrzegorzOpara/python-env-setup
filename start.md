@@ -2,6 +2,11 @@
 Basic configuraton: secrets handling + mysql database on backend side
 
 ### Create and clone git repository
+### Create environement and activate it
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
 ### Navigate to the root folder of repsitory and install django
 ```
 sudo apt install python3-django
@@ -11,13 +16,9 @@ sudo apt install python3-django
 django-admin startproject <project-name> .
 ```
 ### Create django application
-```
+```bash
+cd <project-name>
 python3 manage.py startapp <application_name>
-```
-### Create environement and activate it
-```
-python3 -m venv .venv
-source .venv/bin/activate
 ```
 ### Create .gitignore using python template and ensure .env is listed there
 ### Create .env file and move secrets from setting.py there
