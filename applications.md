@@ -27,4 +27,12 @@ https://database.guide/how-to-install-azure-data-studio-on-ubuntu-20-04/
 sudo snap install dbeaver-ce
 ```
 
+## nodejs and package manager (if you need NodeJS 14+)
+```
+cd ~
+curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
 
+sudo bash nodesource_setup.sh
+
+sudo apt install nodejs
+```
