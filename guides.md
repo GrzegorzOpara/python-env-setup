@@ -20,3 +20,6 @@ sudo apt-get install libmysqlclient-dev
 ```
 pip install mysqlclient
 ```
+
+### setup static files with azure blob storage
+https://medium.com/@DawlysD/django-using-azure-blob-storage-to-handle-static-media-assets-from-scratch-90cbbc7d56be
