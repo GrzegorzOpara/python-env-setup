@@ -19,3 +19,15 @@ function die {
     printf "Script failed: %s\n\n" "$1"
     exit 1
 }
+
+while [ $# -gt 0 ]; do
+    if [[ $1 == "--help" ]]; then
+        usage
+        exit 0
+    elif [[ $1 == "--"* ]]; then
+        v="${1/--/}"
+        declare "$v"="$2"
+        shift
+    fi
+    shift
+done
