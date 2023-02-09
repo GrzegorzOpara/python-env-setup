@@ -31,3 +31,7 @@ while [ $# -gt 0 ]; do
     fi
     shift
 done
+
+GIT_AUTHOR_DATE=$(date -d"$date") 
+GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+git commit --date \""$GIT_AUTHOR_DATE\"" -m \""$message\""
