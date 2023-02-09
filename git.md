@@ -11,6 +11,9 @@
     GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
     git commit --date "$GIT_AUTHOR_DATE" -m "commit message"
     ```
+    
+    The bash script can be found [here](https://github.com/GrzegorzOpara/python-env-setup/blob/main/scripts/git_commit_past.sh).
+
 * push changes to remote branch
     ```
     git push
