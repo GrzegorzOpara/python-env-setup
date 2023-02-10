@@ -7,7 +7,9 @@
     ```
 * commit changes with date and comment
     ```
-    git commit --date "Thu 29 Jan 2023 09:16:17 CET" -m "commit message"
+    GIT_AUTHOR_DATE=$(date -d'2023-02-03 18:21:15') 
+    GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+    git commit -m "commit message"
     ```
 * push changes to remote branch
     ```
